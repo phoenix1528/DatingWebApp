@@ -1,0 +1,10 @@
+*.suo
+*.vs
+*.vscode
+[Bb]in/
+[Oo]bj/
+*.sln
+*.mdf
+*.ldf
+**/**/packages/**/*
+node_modules/
