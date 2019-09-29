@@ -53,6 +53,8 @@ namespace DotnetApp.API
                     };
                 });
 
+            services.AddScoped<LogUserActivity>();
+
             // service is created once per request
             // it uses the service for the same webrequest over and over again
         }

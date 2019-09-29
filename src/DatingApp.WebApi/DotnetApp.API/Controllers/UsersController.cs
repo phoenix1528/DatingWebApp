@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using DotnetApp.API.DataTransferObjects;
+using DotnetApp.API.Helpers;
 using DotnetApp.API.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -11,6 +12,7 @@ using System.Threading.Tasks;
 
 namespace DotnetApp.API.Controllers
 {
+    [ServiceFilter(typeof(LogUserActivity))]
     [Authorize]
     [Route("api/[controller]")]
     [ApiController]
