@@ -1,4 +1,5 @@
-﻿using DotnetApp.API.Models;
+﻿using DotnetApp.API.Helpers;
+using DotnetApp.API.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,7 @@ namespace DotnetApp.API.Interfaces
 
         Task<bool> SaveAllAsync();
 
-        Task<IEnumerable<User>> GetUsers();
+        Task<PagedList<User>> GetUsers(UserParams userParams);
 
         Task<User> GetUser(int id);
         Task<Photo> GetPhoto(int id);
