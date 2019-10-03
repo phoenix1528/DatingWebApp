@@ -1,4 +1,5 @@
 *.suo
+*.db
 *.vs
 *.vscode
 [Bb]in/
