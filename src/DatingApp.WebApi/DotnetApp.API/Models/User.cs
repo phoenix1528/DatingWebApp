@@ -35,5 +35,7 @@ namespace DotnetApp.API.Models
         // user and photo
         // one user can have multiple photos
         public ICollection<Photo> Photos { get; set; }
+        public ICollection<Like> Likers { get; set; }
+        public ICollection<Like> Likees { get; set; }
     }
 }
